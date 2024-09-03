@@ -1,9 +1,8 @@
 version: "3.3"
-
 services:
   homework:
-    image: fapricorn/homework:v1.1
-    build: .
+    container_name: homework
+    image: fapricorn/homework:${version}
     ports:
       - "8000:3000"
     restart: "always"
